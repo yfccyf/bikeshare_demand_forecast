@@ -1,4 +1,4 @@
-# Bikeshare Demand Forecasting for Efficient Management: Project Overview
+# Bikeshare Demand Forecasting: Project Overview
 * Created a time series model that predictis the next-week bikeshare demand
 * Created a prediction tool that predicts the next-day bikeshare demand utilizing weather data and achieved high performance
 * Performed thorough feature engineering including categorical variable encoding, numeric variable normalization, feature standardization
@@ -73,3 +73,14 @@ Conclusion
 * Random, though did the best job in predicting the test set, tends to have an overfit problem in this case
 * SVR did an equally good job in fitting the training set and predicting the test set, and  achieved a good score as well
 * Decision Tree Regression had an overfit problem and did a poor job at predicting the test set in this case
+
+## Model Building - Time Series Analysis
+The goal of this project is to predict the demand for next month. For prediction purpose, I needed to choose a resampling frequency due to the high original frequency. I decided to test 2 different frequencies (daily and weekly), and compare the evaluation metrics at the end in order to pick the suitable one
+
+Then, I used the augmented Dickey-Fuller test to test the stationarity of the dataset. It turned out that the data was non-stationary in either case. The first order of differencing was needed for one dataset, and the second order differencing was necessary for the other. After that, data was stationary in both cases.
+
+Then, I used the Vector Autoregressive model for this multivariable time series analysis problem, selected the best order according to AIC, and evaluated the model based on Root Mean Square Error
+
+The RMSE told us that it makes more sense to use daily data for prediction purpose
+
+![](images/rmse1.png) ![](images/rmse2.png)
