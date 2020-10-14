@@ -60,12 +60,13 @@ Models
 * Random Forest
 
 Model Performance (from best to worst)
-* Multiple Linear Regression, RMSE: 549; R squared: 0.278
-* Lasso Regression, RMSE: 526; R squared: 0.339
-* Ridge Regression, RMSE: 549; R squared: 0.278
+* Random Forest: RMSE: 358; R squared: 0.693
 * Support Vector Regression, RMSE: 386; R squared: 0.644
 * Decision Tree Regression, RMSE: 468; R squared: 0.476
-* Random Forest: RMSE: 358; R squared: 0.693
+* Lasso Regression, RMSE: 526; R squared: 0.339
+* Multiple Linear Regression, RMSE: 549; R squared: 0.278
+* Ridge Regression, RMSE: 549; R squared: 0.278
+
 
 Conclusion
 * Random Forest model far outperformed all the other models except SVR
