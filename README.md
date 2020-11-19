@@ -1,5 +1,5 @@
 # Bikeshare Demand Forecasting: Project Overview
-* Created a time series model that predictis the next-week bikeshare demand
+* Created a time series model that predicts the next-week bikeshare demand
 * Created a prediction tool that predicts the next-day bikeshare demand utilizing weather data and achieved high performance
 * Performed thorough feature engineering including categorical variable encoding, numeric variable normalization, feature standardization
 * Selected appropriate resampling frequency according to feedback from evaluation metrics
